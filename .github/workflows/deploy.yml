@@ -17,4 +17,4 @@ jobs:
         mkdir -p ~/.ssh
         echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh -o StrictHostKeyChecking=no ubuntu@192.168.18.230 'cd /var/www/test1 && ./deploy.sh'
+        ssh -o StrictHostKeyChecking=no ubuntu@119.73.101.175 'cd /var/www/test1 && ./deploy.sh'
